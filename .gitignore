@@ -1,0 +1,90 @@
+# ===============================
+# Python FastAPI Project .gitignore
+# ===============================
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ---- Virtual Environments ----
+.env
+.venv
+venv/
+ENV/
+
+# ---- Environment / Secrets ----
+*.env
+.env.*
+!.env.example
+
+# ---- FastAPI / Uvicorn ----
+*.log
+*.pid
+
+# ---- Pytest / Coverage ----
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# ---- Migrations (if using Alembic) ----
+alembic/versions/*.pyc
+alembic/versions/__pycache__/
+# If you want to ignore auto-generated migration files, uncomment:
+# alembic/versions/*.py
+
+# ---- MyPy / Type Checking ----
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ---- Pydantic Settings Cache ----
+.pydantic/
+
+# ---- Bytecode / Build ----
+build/
+dist/
+downloads/
+wheels/
+pip-wheel-metadata/
+*.egg-info/
+*.egg
+
+# ---- IDE / Editor ----
+# VSCode
+.vscode/
+# PyCharm
+.idea/
+*.iml
+
+# ---- OS Files ----
+.DS_Store
+Thumbs.db
+
+# ---- Docker ----
+# If running containers locally
+docker-data/
+docker-compose.override.yml
+*.pid
+
+# ---- Logs ----
+*.log
+logs/
+log/
+
+# ---- SQLite (if used for dev) ----
+*.sqlite3
+*.db
+
+# ---- Jupyter (if used) ----
+.ipynb_checkpoints/
+
+# ---- Coverage Reports ----
+*.lcov
