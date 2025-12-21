@@ -3,11 +3,15 @@
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
+    ENV: str = "local"
+
     POSTGRES_HOST: str
     POSTGRES_PORT: int
     POSTGRES_DB: str
-    POSTGRES_USER: str
-    POSTGRES_PASSWORD: str
+
+    # Local-only
+    POSTGRES_USER: str | None = None
+    POSTGRES_PASSWORD: str | None = None
 
     DEBUG: bool = False
 

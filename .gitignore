@@ -88,3 +88,4 @@ log/
 
 # ---- Coverage Reports ----
 *.lcov
+package/
