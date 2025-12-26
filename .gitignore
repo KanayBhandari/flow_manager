@@ -88,3 +88,5 @@ log/
 
 # ---- Coverage Reports ----
 *.lcov
+package/
+function.zip
